@@ -12,9 +12,6 @@ void  Print(){
     }
     
 }
-
-
-
 int main(){
     thread th(Print);
 for (int i = 0; i < 10; i++)
@@ -22,6 +19,7 @@ for (int i = 0; i < 10; i++)
 cout<<"Hello world!"<<endl;
 this_thread::sleep_for(0.5s);
 }
+cout<<"kollliii";
 th.join();
 return 0;
 }
